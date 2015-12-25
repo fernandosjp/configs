@@ -12,7 +12,7 @@ alias gpull='git pull'
 alias gstatus='git status'
 alias gpush='git push'
 alias gco='git commit -m'
-alias gsyncall='find ~/Desktop/Fernando/EasyTaxi/ -type d -name .git \
+alias gsyncall='find ~/Desktop/Fernando/GitHub/ -type d -name .git \
   | xargs -n 1 dirname \
   | sort \
   | while read line; do echo $line && cd $line && git pull; done'
